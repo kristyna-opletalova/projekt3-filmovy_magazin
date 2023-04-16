@@ -1,7 +1,7 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
 import './style.css';
-import Header from "./pages/Header";
+import Menu from "./pages/Menu";
 import Home from "./pages/Home";
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 import Reviews from "./pages/Reviews";
@@ -11,7 +11,7 @@ import Movies from "./pages/Movies";
 const App = () => {
     return (
         <div className="container">
-            <Header/>
+            <Menu/>
             <Outlet/>
         </div>
     );

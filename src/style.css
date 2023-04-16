@@ -39,7 +39,9 @@ html {
   padding: 10px;
 }
 
-.menu-item {
+.menu-item a {
+  text-decoration: none;
+  color: black;
 }
 
 /* movie list */
