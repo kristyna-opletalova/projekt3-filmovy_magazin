@@ -1,20 +1,16 @@
 import React from "react";
 import Movie from "../Movie";
+import {movies} from "../../movie-database";
+import {createBrowserRouter, Link, Outlet} from "react-router-dom";
+
 const MovieList = () => {
-    return (
-        <div className="movies-container">
 
-            <nav className="movie-list">
-                <a href="#" className="active">Pulp Fiction</a>
-                <a href="#">1917</a>
-                <a href="#">La La Land</a>
-                <a href="#">Inception</a>
-                <a href="#">Guardians of the Galaxy</a>
-            </nav>
-
-            <Movie/>
-        </div>
-    )
+    return (<nav className="movie-list">
+            {movies.map((movieItem) =>
+                <Link to={`/movies/${movieItem.id}`}>{movieItem.title}</Link>
+            )}
+        </nav>)
 }
+
 
 export default MovieList;

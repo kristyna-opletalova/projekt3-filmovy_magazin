@@ -1,13 +1,13 @@
 import React from "react";
 
-const Movie = () => {
+const Movie = ({ id, name, poster}) => {
     return (
         <div className="movie">
             <img
-                src="https://github.com/Czechitas-podklady-WEB/projekt-filmovy-magazin/raw/main/html-vzor/images/pulp-fiction.jpg"
+                src={poster}
                 alt="Pulp Fiction"/>
 
-            <h2>Pulp Fiction</h2>
+            <h2>{name}</h2>
 
             <p>After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now
                 the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan
