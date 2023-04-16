@@ -12,10 +12,13 @@ import ErrorPage from "./pages/Error";
 
 const App = () => {
     return (
-        <div className="container">
+        <>
             <Menu/>
-            <Outlet/>
-        </div>
+            <div className="container">
+
+                <Outlet/>
+            </div>
+        </>
     );
 };
 
