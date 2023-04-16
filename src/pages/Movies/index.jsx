@@ -1,8 +1,6 @@
 import React from "react";
 import MovieList from "../../components/MovieList";
-import {createBrowserRouter, Outlet} from "react-router-dom";
-import Movie from "../../components/Movie";
-import movies from "../../movie-database";
+import {Outlet} from "react-router-dom";
 
 const Movies = () => {
 

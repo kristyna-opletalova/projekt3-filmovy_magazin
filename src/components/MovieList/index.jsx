@@ -1,7 +1,6 @@
 import React from "react";
-import Movie from "../Movie";
 import {movies} from "../../movie-database";
-import {createBrowserRouter, Link, Outlet} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const MovieList = () => {
 
@@ -11,6 +10,5 @@ const MovieList = () => {
             )}
         </nav>)
 }
-
 
 export default MovieList;
