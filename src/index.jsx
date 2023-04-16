@@ -8,6 +8,7 @@ import Reviews from "./pages/Reviews";
 import Articles from "./pages/Articles";
 import Movies from "./pages/Movies";
 import Movie from "./components/Movie";
+import ErrorPage from "./pages/Error";
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App/>,
+        errorElement: <ErrorPage/>,
         children: [
             {
                 path: "/",

@@ -1,69 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  max-width: 60rem;
-  margin: 0 auto;
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
+.error {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.error img {
+    margin-bottom: 50px;
+}
+
+.error h2, p {
+    color: #4b2c0b;
+    margin: 0;
+}
+
+.error h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.error p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.error button {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 14px;
+    color: #4b2c0b;
+    background-color: #eee3d3;
+    padding: 0 18px;
+    font-weight: 600;
+}
+
+.error button:hover {
+    color: #e3d9cb;
+    background-color: #4b2c0b;
+}
 
 
 /* movies */
 .movies-container {
-  display: flex;
-  align-items: start;
-  gap: 2rem;
+    display: flex;
+    align-items: start;
+    gap: 2rem;
 }
 
 .menu {
-  display: flex;
-  background-color: #e5e5e5;
-  justify-content: space-around;
-  padding: 10px;
+    display: flex;
+    background-color: #e5e5e5;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .menu-item a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 /* movie list */
 .movie-list {
-  flex: 0 0 25%;
-  display: flex;
-  flex-direction: column;
-  background-color: #c2dffc;
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #c2dffc;
 }
 
 .movie-list a {
-  display: block;
-  padding: 1rem;
-  color: black;
-  text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
 }
 
 .movie-list a:hover {
-  background-color: #a0cfff;
+    background-color: #a0cfff;
 }
 
 .movie-list a.active {
-  background-color: #53a9ff;
-  color: white;
+    background-color: #53a9ff;
+    color: white;
 }
