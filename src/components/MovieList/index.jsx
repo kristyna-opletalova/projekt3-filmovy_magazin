@@ -6,7 +6,7 @@ const MovieList = () => {
 
     return (<nav className="movie-list">
             {movies.map((movieItem) =>
-                <Link to={`/movies/${movieItem.id}`}>{movieItem.title}</Link>
+                <Link key={movieItem.id} to={`/movies/${movieItem.id}`}>{movieItem.title}</Link>
             )}
         </nav>)
 }
